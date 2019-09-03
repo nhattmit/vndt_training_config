@@ -22,36 +22,36 @@ logging:
 zuul:
   routes:
     userservice:
-      path: /v2-6-5/userservice/**
-      serviceId: User-service-v2.6.5
+      path: /v1-1-1/userservice/**
+      serviceId: User-service-v2.5.0
       stripPrefix: true
     productservice:
-      path: /v2-6-5/productservice/**
-      serviceId: Product-service-v2.6.5
+      path: /v1-1-1/productservice/**
+      serviceId: Product-service-v2.5.0
       stripPrefix: true
     orderservice:
-      path: /v2-6-5/orderservice/**
-      serviceId: Order-service-v2.6.5
+      path: /v1-1-1/orderservice/**
+      serviceId: Order-service-v2.5.0
       stripPrefix: true
     newsservice:
-      path: /v2-6-5/newsservice/**
-      serviceId: News-service-v2.6.5
+      path: /v1-1-1/newsservice/**
+      serviceId: News-service-v2.5.0
       stripPrefix: true
     eventservice:
-      path: /v2-6-5/eventservice/**
-      serviceId: Event-service-v2.6.5
+      path: /v1-1-1/eventservice/**
+      serviceId: Event-service-v2.5.0
       stripPrefix: true
     shipperservice:
-      path: /v2-6-5/shipperservice/**
-      serviceId: Shipper-service-v2.6.5
+      path: /v1-1-1/shipperservice/**
+      serviceId: Shipper-service-v2.5.0
       stripPrefix: true
     searchservice:
-      path: /v2-6-5/searchservice/**
-      serviceId: Search-service-v2.6.5
+      path: /v1-1-1/searchservice/**
+      serviceId: Search-service-v2.5.0
       stripPrefix: true
     salemanservice:
-      path: /v2-6-5/saleservice/**
-      serviceId: Saleman-service-v2.6.5
+      path: /v1-1-1/saleservice/**
+      serviceId: Saleman-service-v2.5.0
       stripPrefix: true
   retryable: true
   #ribbonIsolationStrategy:THREAD
@@ -80,54 +80,54 @@ zuul:
 
 hystrix:
   command:
-    User-service-v2.6.5:
+    User-service-v2.5.0:
       execution:
         isolation:
           strategy: THEARD
           thread:
             timeoutInMilliseconds: 120000
-    Product-service-v2.6.5:
+    Product-service-v2.5.0:
       execution:
         isolation:       
           strategy: THEARD
           thread:
             timeoutInMilliseconds: 120000
-    Order-service-v2.6.5:
+    Order-service-v2.5.0:
       execution:
         isolation:
           thread:
           strategy: THEARD
           thread:
             timeoutInMilliseconds: 120000
-    News-service-v2.6.5:
+    News-service-v2.5.0:
       execution:
         isolation:
           thread:
           strategy: THEARD
           thread:
             timeoutInMilliseconds: 120000
-    Event-service-v2.6.5:
+    Event-service-v2.5.0:
       execution:
         isolation:
           thread:
           strategy: THEARD
           thread:
             timeoutInMilliseconds: 120000
-    Shipper-service-v2.6.5:
+    Shipper-service-v2.5.0:
       execution:
         isolation:
           thread:
           strategy: THEARD
           thread:
             timeoutInMilliseconds: 120000
-    Search-service-v2.6.5:
+    Search-service-v2.5.0:
       execution:
         isolation:
           thread:
           strategy: THEARD
           thread:
             timeoutInMilliseconds: 120000
-    Saleman-service-v2.6.5:
+    Saleman-service-v2.5.0:
       execution:
         isolation:
           thread:
@@ -135,7 +135,7 @@ hystrix:
           thread:
             timeoutInMilliseconds: 120000
 
-User-service-v2.6.5:
+User-service-v2.5.0:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     listOfServers: http://localhost:33001
@@ -152,7 +152,7 @@ User-service-v2.6.5:
     eureka:
       enabled: true
     
-Product-service-v2.6.5:
+Product-service-v2.5.0:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     listOfServers: http://localhost:33011
@@ -169,7 +169,7 @@ Product-service-v2.6.5:
     eureka:
       enabled: true
       
-Order-service-v2.6.5:
+Order-service-v2.5.0:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     listOfServers: http://localhost:33021
@@ -186,7 +186,7 @@ Order-service-v2.6.5:
     eureka:
       enabled: true
       
-News-service-v2.6.5:
+News-service-v2.5.0:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     listOfServers: http://localhost:33031
@@ -203,7 +203,7 @@ News-service-v2.6.5:
     eureka:
       enabled: true
       
-Event-service-v2.6.5:
+Event-service-v2.5.0:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     listOfServers: http://localhost:33041
@@ -220,7 +220,7 @@ Event-service-v2.6.5:
     eureka:
       enabled: true
 
-Shipper-service-v2.6.5:
+Shipper-service-v2.5.0:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     listOfServers: http://localhost:33051
@@ -237,7 +237,7 @@ Shipper-service-v2.6.5:
     eureka:
       enabled: true
 
-Search-service-v2.6.5:
+Search-service-v2.5.0:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     listOfServers: http://localhost:33061
@@ -254,7 +254,7 @@ Search-service-v2.6.5:
     eureka:
       enabled: true
       
-Saleman-service-v2.6.5:
+Saleman-service-v2.5.0:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     listOfServers: http://localhost:33071
