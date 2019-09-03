@@ -50,7 +50,7 @@ zuul:
       serviceId: Search-service-v2.6.5
       stripPrefix: true
     salemanservice:
-      path: /v2-6-5/saleservice/**
+      path: /v2-6-5/salemanservice/**
       serviceId: Saleman-service-v2.6.5
       stripPrefix: true
   retryable: true
