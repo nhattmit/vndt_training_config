@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:10002/eureka/
+      defaultZone: http://10.0.204.3:10002/eureka/
 
 spring:
   cloud:
@@ -138,7 +138,7 @@ hystrix:
 User-service-v2.6.5:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: http://127.0.0.1:33001
+    listOfServers: http://10.0.204.3:33001
     ConnectTimeout: 10000
     ReadTimeout: 10000
     MaxTotalHttpConnections: 2000
@@ -155,7 +155,7 @@ User-service-v2.6.5:
 Product-service-v2.6.5:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: http://127.0.0.1:33011
+    listOfServers: http://10.0.204.3:33011
     ConnectTimeout: 10000
     ReadTimeout: 10000
     MaxTotalHttpConnections: 2000
@@ -172,7 +172,7 @@ Product-service-v2.6.5:
 Order-service-v2.6.5:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: http://127.0.0.1:33021
+    listOfServers: http://10.0.204.3:33021
     ConnectTimeout: 10000 
     ReadTimeout: 10000
     MaxTotalHttpConnections: 2000
@@ -189,7 +189,7 @@ Order-service-v2.6.5:
 News-service-v2.6.5:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: http://127.0.0.1:33031
+    listOfServers: http://10.0.204.3:33031
     ConnectTimeout: 10000
     ReadTimeout: 10000
     MaxTotalHttpConnections: 2000
@@ -206,7 +206,7 @@ News-service-v2.6.5:
 Event-service-v2.6.5:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: http://127.0.0.1:33041
+    listOfServers: http://10.0.204.3:33041
     ConnectTimeout: 10000
     ReadTimeout: 10000
     MaxTotalHttpConnections: 2000
@@ -223,7 +223,7 @@ Event-service-v2.6.5:
 Shipper-service-v2.6.5:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: http://127.0.0.1:33051
+    listOfServers: http://10.0.204.3:33051
     ConnectTimeout: 10000
     ReadTimeout: 10000
     MaxTotalHttpConnections: 2000
@@ -240,7 +240,7 @@ Shipper-service-v2.6.5:
 Search-service-v2.6.5:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: http://127.0.0.1:33061
+    listOfServers: http://10.0.204.3:33061
     ConnectTimeout: 10000
     ReadTimeout: 10000
     MaxTotalHttpConnections: 2000
@@ -257,7 +257,7 @@ Search-service-v2.6.5:
 Saleman-service-v2.6.5:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: http://127.0.0.1:33071
+    listOfServers: http://10.0.204.3:33071
     ConnectTimeout: 10000
     ReadTimeout: 10000
     MaxTotalHttpConnections: 2000
