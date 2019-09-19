@@ -1,3 +1,7 @@
+spring:
+   application:
+      name: Product-service-v2.6.5
+
 server:
   port: 33011
 
@@ -5,6 +9,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:10002/eureka/
+  instance:
+    preferIpAddress: true
       
 logging:
   pattern: 
